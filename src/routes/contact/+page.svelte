@@ -1,3 +1,9 @@
+<script>
+  // get colors prop
+  export let color;
+  console.log(color);
+</script>
+
 <main>
   <h1>Contact</h1>
   <p>Neem contact met ons op via onderstaande gegevens:</p>
@@ -6,3 +12,6 @@
     Email: voorbeeld@example.com
   </p>
 </main>
+
+<style>
+</style>
