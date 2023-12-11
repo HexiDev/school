@@ -84,7 +84,7 @@
               if (color === randomColor) {
                 // get the array index of the clicked item
                 let index = colorVars[color].colors.indexOf(colorVar);
-                if (!(index === colorVars[color].jumpscare)) {
+                if (index === colorVars[color].jumpscare) {
                   // show jumpscare
                   document.querySelector(".jumpscare").classList.add("active");
                   setTimeout(() => {
@@ -124,7 +124,7 @@
         // set started to false after 10 seconds
         setTimeout(() => {
           started = false;
-        }, 10000);
+        }, 15000);
       }}
     >
       <div class="startKnop">
