@@ -1,37 +1,5 @@
-/* primary: {
-      100: "#D4DCFF",
-      200: "#A9B4FF",
-      300: "#7E8CFF",
-      400: "#5364FF",
-      500: "#283CFF",
-      600: "#0014FF",
-      700: "#0000CC",
-      800: "#000099",
-      900: "#000066",
-    },
-    secondary: {
-      100: "#FFE6D4",
-      200: "#FFC9A9",
-      300: "#FFAC7E",
-      400: "#FF8F53",
-      500: "#FF7214",
-      600: "#CC5900",
-      700: "#994000",
-      800: "#662700",
-      900: "#331400",
-    },
-    tertiary: {
-      100: "#D4FFE6",
-      200: "#A9FFC9",
-      300: "#7EFFAC",
-      400: "#53FF8F",
-      500: "#14FF72",
-      600: "#00CC59",
-      700: "#009940",
-      800: "#006627",
-      900: "#003314",
-    }, */
 * {
+  font-family: "Roboto", sans-serif;
   /* make variables for colors  */
   --primary-100: #d4dcff;
   --primary-200: #a9b4ff;
@@ -60,4 +28,35 @@
   --tertiary-700: #009940;
   --tertiary-800: #006627;
   --tertiary-900: #003314;
+  --warning-100: #fff4d4;
+  --warning-200: #ffe9a9;
+  --warning-300: #ffde7e;
+  --warning-400: #ffd353;
+  --warning-500: #ffc814;
+  --warning-600: #cc9f00;
+  --warning-700: #997a00;
+  --warning-800: #665500;
+  --warning-900: #332a00;
+  --danger-100: #ffd4d4;
+  --danger-200: #ffa9a9;
+  --danger-300: #ff7e7e;
+  --danger-400: #ff5353;
+  --danger-500: #ff1414;
+  --danger-600: #cc0000;
+  --danger-700: #990000;
+  --danger-800: #660000;
+  --danger-900: #330000;
+  --success-100: #d4ffd4;
+  --success-200: #a9ffa9;
+  --success-300: #7eff7e;
+  --success-400: #53ff53;
+  --success-500: #14ff14;
+  --success-600: #00cc00;
+  --success-700: #009900;
+  --success-800: #006600;
+  --success-900: #003300;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
