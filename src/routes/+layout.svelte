@@ -19,13 +19,17 @@
       if (transitionPage) {
         // set all transitionDiv divs to translateX(0)
         document.querySelectorAll("#transitionId div").forEach((div) => {
-          div.style.transform = "translateX(0)";
+          div.style.width = "100%";
         });
+        // set .transitionDiv align-items: flex-start;
+        document.querySelector("#transitionId").style.alignItems = "flex-start";
       } else {
         // set all transitionDiv divs to translateX(-100%)
         document.querySelectorAll("#transitionId div").forEach((div) => {
-          div.style.transform = "translateX(-100%)";
+          div.style.width = "0%";
         });
+        // set .transitionDiv align-items: flex-end;
+        document.querySelector("#transitionId").style.alignItems = "flex-end";
       }
     };
   });
@@ -94,12 +98,16 @@
     z-index: 500;
     overflow: hidden;
     pointer-events: none;
+    /* align insides to left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
   .transitionDiv div {
     background-color: white;
-    width: 100%;
+    width: 0%;
     height: calc(100vh / 5);
-    transform: translateX(-100%);
     pointer-events: all;
   }
   .transitionDiv div:nth-child(1) {

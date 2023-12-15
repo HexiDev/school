@@ -6,7 +6,7 @@ const pageTransition = writable({
   goto: async (link) => {
     transitionPage.set(true);
     // wait 400ms
-    await new Promise((r) => setTimeout(r, 900));
+    await new Promise((r) => setTimeout(r, 890));
     goto(link);
     transitionPage.set(false);
   },
