@@ -1,6 +1,7 @@
 <script>
+  import { title } from "$lib/stores";
   import { UnstyledButton } from "@svelteuidev/core";
-
+  $title = "Kleuren";
   let hoveredColor = "";
   let colorVars = {
     primary: [
@@ -40,8 +41,6 @@
 </script>
 
 <main>
-  <h1>Kleuren</h1>
-
   <p>
     Hieronder vind je de kleuren die wij gebruiken in onze website. Deze kleuren
     zijn te vinden in de <code>style.css</code> file (+layout.svelte).
@@ -77,10 +76,6 @@
 </main>
 
 <style>
-  main {
-    padding: 0 100px;
-  }
-
   .color-container {
     display: flex;
     flex-wrap: wrap;

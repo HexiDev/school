@@ -1,6 +1,24 @@
 * {
   font-family: "Roboto", sans-serif;
   /* make variables for colors  */
+  --white-100: #ffffff;
+  --white-200: #f2f2f2;
+  --white-300: #e6e6e6;
+  --white-400: #d9d9d9;
+  --white-500: #cccccc;
+  --white-600: #bfbfbf;
+  --white-700: #b3b3b3;
+  --white-800: #a6a6a6;
+  --white-900: #999999;
+  --black-100: #8c8c8c;
+  --black-200: #808080;
+  --black-300: #737373;
+  --black-400: #666666;
+  --black-500: #595959;
+  --black-600: #4d4d4d;
+  --black-700: #404040;
+  --black-800: #333333;
+  --black-900: #000000;
   --primary-100: #d4dcff;
   --primary-200: #a9b4ff;
   --primary-300: #7e8cff;
@@ -59,4 +77,6 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--black-800);
+  color: var(--white-100);
 }

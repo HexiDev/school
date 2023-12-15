@@ -1,10 +1,11 @@
 <footer>
-  <p>&copy; 2023 Voorbeeldwebsite. Alle rechten voorbehouden.</p>
+  <p>Gemaakt door Youri.</p>
 </footer>
 
 <style>
   footer {
     margin-top: 100px;
     text-align: center;
+    color: white;
   }
 </style>
