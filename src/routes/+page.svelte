@@ -166,5 +166,9 @@
       flex-direction: column;
       gap: 0px;
     }
+    .links {
+      margin: 0;
+      overflow: hidden;
+    }
   }
 </style>

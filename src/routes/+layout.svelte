@@ -78,7 +78,7 @@
     grid-template-rows: 1fr auto;
     /* center items*/
     align-items: center;
-    padding: 0 100px;
+    padding: 0 25px;
   }
   .top {
     /* Hier maak ik een flex zodat de footer altijd beneden van de page is */
@@ -116,5 +116,10 @@
   }
   .transitionDiv div:nth-child(5) {
     transition: all 0.5s ease 0.01s;
+  }
+  @media (max-width: 768px) {
+    .page {
+      padding: 0 5px;
+    }
   }
 </style>
