@@ -1,19 +1,27 @@
 <script>
-  import { goto } from "$app/navigation";
-  import { loaded, pageTransition, title } from "$lib/stores";
-  import { Button } from "@svelteuidev/core";
-  import { typewriter } from "@svelteuidev/motion";
-  import { cubicOut } from "svelte/easing";
-  import { fade, fly, slide } from "svelte/transition";
+  // Importeren van noodzakelijke modules en componenten
+  import { loaded, pageTransition, title } from "$lib/stores"; // Svelte stores
+  import { Button } from "@svelteuidev/core"; // UI component
+  import { typewriter } from "@svelteuidev/motion"; // Bewegingseffect
+  import { cubicOut } from "svelte/easing"; // Easing functie
+  import { fade, fly } from "svelte/transition"; // Overgangseffecten
+
+  // De titel instellen op een lege string
   $title = "";
+
+  // De initiële geladen toestand opslaan
   const pageOldLoaded = $loaded;
+
+  // De geladen toestand instellen op true na een vertraging van 0ms
   setTimeout(() => {
     $loaded = true;
   }, 0);
+
+  // Array van paginalinks
   let pagesLinks = [
     {
-      name: "Profiel",
-      link: "/profiel",
+      name: "Over Mij",
+      link: "/over-mij",
     },
     {
       name: "Opleiding",
@@ -23,21 +31,25 @@
       name: "Mijn Werk",
       link: "/mijn-werk",
     },
-    {
-      name: "Vaardigheden",
-      link: "/vaardigheden",
-    },
-    {
-      name: "Over Mij",
-      link: "/over-mij",
-    },
   ];
+
+  // Functie om te wachten voor een gespecificeerde hoeveelheid tijd
   async function wait(ms) {
+    // Geeft een belofte terug die oplost na een vertraging van 'ms' milliseconden
     return new Promise((resolve) => {
       setTimeout(resolve, ms);
     });
   }
 </script>
+
+<svelte:head>
+  <!-- Meta data voor de website -->
+  <title>Home</title>
+  <meta name="description" content="Home" />
+  <meta name="keywords" content="Home Pagina" />
+  <meta name="author" content="Youri" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</svelte:head>
 
 <div class="center">
   <div class="infoContainer">

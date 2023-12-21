@@ -10,10 +10,17 @@
   import { faHouse } from "@fortawesome/free-solid-svg-icons";
   import { transitionPage, title } from "$lib/stores";
   import { onMount } from "svelte";
+  import { page } from "$app/stores";
   let color = {};
   console.log(color);
   let updateTransitionPage = (transitionPage) => {};
   $: updateTransitionPage($transitionPage);
+  $: if ($page && $page.route && $page.route.id) {
+    // make title $page.route.id.replace("/", "") but with a capital letter
+    $title =
+      $page.route.id.replace("/", "").charAt(0).toUpperCase() +
+      $page.route.id.replace("/", "").slice(1);
+  }
   onMount(() => {
     updateTransitionPage = (transitionPage) => {
       if (transitionPage) {
