@@ -71,7 +71,6 @@
     font-size: 1.5rem;
     margin: 0;
     color: #bababa;
-    max-width: 800px;
   }
   .descriptionImg {
     border-radius: 15px;
@@ -79,13 +78,14 @@
   }
   .infoContainer {
     display: grid;
-    grid-template-rows: 0;
+    grid-template-rows: 1;
     grid-template-columns: 1fr;
   }
   .infoItem {
     grid-row: 1;
     grid-column: 1;
     margin: 0 auto;
+    max-width: 800px;
   }
   .split {
     display: grid;
