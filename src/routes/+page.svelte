@@ -12,40 +12,24 @@
   }, 0);
   let pagesLinks = [
     {
-      name: "Home",
-      link: "/",
+      name: "Profiel",
+      link: "/profiel",
     },
     {
-      name: "About",
-      link: "/kleuren",
+      name: "Opleiding",
+      link: "/opleiding",
     },
     {
-      name: "test",
-      link: "/kleuren",
+      name: "Mijn Werk",
+      link: "/mijn-werk",
     },
     {
-      name: "test",
-      link: "/kleuren",
+      name: "Vaardigheden",
+      link: "/vaardigheden",
     },
     {
-      name: "test",
-      link: "/kleuren",
-    },
-    {
-      name: "test",
-      link: "/kleuren",
-    },
-    {
-      name: "test",
-      link: "/kleuren",
-    },
-    {
-      name: "test",
-      link: "/kleuren",
-    },
-    {
-      name: "test",
-      link: "/kleuren",
+      name: "Over Mij",
+      link: "/over-mij",
     },
   ];
   async function wait(ms) {
