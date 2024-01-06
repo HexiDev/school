@@ -1,6 +1,13 @@
 <script>
 </script>
 
+<svelte:head>
+  <title>Contact</title>
+  <meta name="description" content="Contact" />
+  <meta name="keywords" content="Contact" />
+  <meta name="author" content="Youri" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</svelte:head>
 <main>
   <div class="center">
     <div>
