@@ -1,6 +1,6 @@
+/* Globale css die ik gebruik */
 * {
   font-family: "Roboto", sans-serif;
-  /* make variables for colors  */
   --white-100: #ffffff;
   --white-200: #f2f2f2;
   --white-300: #e6e6e6;
@@ -79,4 +79,8 @@ body {
   padding: 0;
   background-color: var(--black-800);
   color: var(--white-100);
+}
+
+a {
+  color: var(--primary-200);
 }

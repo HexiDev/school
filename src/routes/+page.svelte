@@ -31,6 +31,10 @@
       name: "Mijn Werk",
       link: "/mijn-werk",
     },
+    {
+      name: "Contact",
+      link: "/contact",
+    },
   ];
 
   // Functie om te wachten voor een gespecificeerde hoeveelheid tijd
@@ -42,6 +46,7 @@
   }
 </script>
 
+<!-- Definieer de inhoud van de head-sectie -->
 <svelte:head>
   <!-- Meta data voor de website -->
   <title>Home</title>
@@ -51,6 +56,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
+<!-- Hoofdinhoud van de pagina -->
 <div class="center">
   <div class="infoContainer">
     <div class="titleContainer">
@@ -99,6 +105,7 @@
   </div>
 </div>
 
+<!-- Definieer de stijlregels voor de pagina -->
 <style>
   .links {
     display: flex;

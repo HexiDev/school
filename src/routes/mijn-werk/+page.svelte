@@ -1,6 +1,8 @@
 <script>
+  // Voeg hier eventuele scriptcode toe indien nodig
 </script>
 
+<!-- Definieer de inhoud van de head-sectie -->
 <svelte:head>
   <title>Mijn Werk</title>
   <meta name="description" content="Mijn Werk" />
@@ -9,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
+<!-- Hoofdinhoud van de pagina -->
 <main>
   <div class="divider">
     <div class="infoContainer">
@@ -22,6 +25,7 @@
   </div>
 </main>
 
+<!-- Definieer de stijlregels voor de pagina -->
 <style>
   .divider {
     width: 100%;

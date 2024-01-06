@@ -1,9 +1,13 @@
 <script>
+  // Importeer de vereiste modules
   import { fly } from "svelte/transition";
   import PageScroller from "../../Components/PageScroller.svelte";
+
+  // Initialiseer de paginateller
   let page = 0;
 </script>
 
+<!-- Definieer de inhoud van de head-sectie -->
 <svelte:head>
   <title>Opleiding</title>
   <meta name="description" content="Opleiding" />
@@ -12,9 +16,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
+<!-- Hoofdinhoud van de pagina -->
 <main>
   <div class="divider">
     <div class="infoContainer">
+      <!-- Sectie voor pagina 0 -->
       {#if page == 0}
         <div
           class="infoItem"
@@ -26,7 +32,7 @@
             <p class="description">
               Ik zit op het moment op het <a href="https://noorderpoort.nl/"
                 >Noorderpoort</a
-              > in groningen. Ik doe daar de opleiding Expert IT systems and devices.
+              > in Groningen. Ik doe daar de opleiding Expert IT systems and devices.
               Ik zit nu in de 1e klas en ik vind het tot nu toe een leuke opleiding.
             </p>
             <img
@@ -38,6 +44,8 @@
           </div>
         </div>
       {/if}
+
+      <!-- Sectie voor pagina 1 -->
       {#if page == 1}
         <div
           class="infoItem"
@@ -46,16 +54,19 @@
         >
           <h1 class="titleName">Vakken</h1>
           <p class="description">
-            Zelf vindt ik tables lelijk om in een website te pleuren maar het
+            Zelf vind ik tables lelijk om in een website te pleuren maar het
             moest...
           </p>
         </div>
       {/if}
     </div>
   </div>
+
+  <!-- Voeg de paginascroller toe en bind deze aan de paginateller -->
   <PageScroller bind:selected={page} amount={2} />
 </main>
 
+<!-- Definieer de stijlregels voor de pagina -->
 <style>
   .divider {
     width: 100%;

@@ -1,9 +1,13 @@
 <script>
+  // Importeer de vereiste modules
   import { fly } from "svelte/transition";
   import PageScroller from "../../Components/PageScroller.svelte";
+
+  // Initialiseer de paginateller
   let page = 0;
 </script>
 
+<!-- Definieer de inhoud van de head-sectie -->
 <svelte:head>
   <title>Over Mij</title>
   <meta name="description" content="Over Mij" />
@@ -12,9 +16,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
+<!-- Hoofdinhoud van de pagina -->
 <main>
   <div class="divider">
     <div class="infoContainer">
+      <!-- Sectie voor pagina 0 -->
       {#if page == 0}
         <div
           class="infoItem"
@@ -30,6 +36,8 @@
           </p>
         </div>
       {/if}
+
+      <!-- Sectie voor pagina 1 -->
       {#if page == 1}
         <div
           class="infoItem"
@@ -56,24 +64,26 @@
       {/if}
     </div>
   </div>
+
+  <!-- Voeg de paginascroller toe en bind deze aan de paginateller -->
   <PageScroller bind:selected={page} amount={2} />
 </main>
 
+<!-- Definieer de stijlregels voor de pagina -->
 <style>
   .divider {
     width: 100%;
     height: 100%;
-    min-height: calc(100vh - 125px);
+    min-height: calc(100svh - 125px);
   }
   .titleName {
     font-size: 3rem;
     margin: 0;
     text-align: center;
+    color: white;
   }
   .description {
-    font-size: 1.5rem;
     margin: 5px;
-    color: #bababa;
   }
   .infoContainer {
     display: grid;
@@ -85,5 +95,7 @@
     grid-column: 1;
     margin: 0 auto;
     max-width: 800px;
+    color: #bababa;
+    font-size: 1.5rem;
   }
 </style>
