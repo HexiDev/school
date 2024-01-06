@@ -53,10 +53,29 @@
           out:fly={{ x: -50, duration: 250 }}
         >
           <h1 class="titleName">Vakken</h1>
-          <p class="description">
-            Zelf vind ik tables lelijk om in een website te pleuren maar het
-            moest...
-          </p>
+          <!-- Een tabel met vakken en cijfers -->
+          <table>
+            <tr>
+              <th>Vak</th>
+              <th>Cijfer</th>
+            </tr>
+            <tr>
+              <td>Engels</td>
+              <td>{Math.floor(Math.random() * 40 + 60) / 10}</td>
+            </tr>
+            <tr>
+              <td>Nederlands</td>
+              <td>{Math.floor(Math.random() * 40 + 60) / 10}</td>
+            </tr>
+            <tr>
+              <td>ApplicatieOntwikkeling</td>
+              <td>{Math.floor(Math.random() * 30 + 70) / 10}</td>
+            </tr>
+            <tr>
+              <td>Windows</td>
+              <td>{Math.floor(Math.random() * 30 + 70) / 10}</td>
+            </tr>
+          </table>
         </div>
       {/if}
     </div>
@@ -77,11 +96,6 @@
     font-size: 3rem;
     margin: 5px;
     text-align: center;
-  }
-  .description {
-    font-size: 1.5rem;
-    margin: 0;
-    color: #bababa;
   }
   .descriptionImg {
     border-radius: 15px;
@@ -104,6 +118,24 @@
     gap: 20px;
     max-width: 800px;
   }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 400px;
+  }
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f244;
+    color: black;
+  }
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+
   a {
     color: #bababa;
   }
